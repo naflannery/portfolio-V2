@@ -1,0 +1,59 @@
+<!-- A man is flying in a hot air balloon and realizes he is lost.
+He reduces his height and spots a man below. He lowers the balloon further and shouts:
+
+"Excuse me, can you help me? I promised my friend I would meet him half an hour ago but I don't know where I am"
+
+The man below says "Yes, you are in a hot air balloon, hovering approximately 30 feet above the field. You are between 40 and 42 degrees 
+north latitude and between 58 and 60 degrees west longitude"
+
+"You must be a programmer", says the balloonist.
+
+"I am" replies the man. "How did you know?"
+
+"Well" says the balloonist, "everything you told me is technically correct, but I have no idea what to make of the information, and the fact 
+is I'm still lost"
+
+The man below say, "You must be a project manager"
+
+"I am" replies the balloonist "how did you know?"
+
+"Well" says the man "you don't know where you are or where you are going. You have made a promise which you have no idea how to keep and 
+you expect me to solve your problems. The fact is you are in the exact same position you were in before we met but now it is somehow my fault." -->
+
+<%- include("header.ejs"); %>
+
+<!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+<section class="projects" id="projects">
+  <div class="content-wrapper divider">
+    <h2>Featured Projects</h2>
+    <p>
+      View selected projects below. More information can be found on
+      <!-- link to github pagee -->
+      <a href="https://github.com/naflannery">my GitHub page</a>.
+    </p>
+
+    <!-- Copy the whole <section> block to add more projects. -->
+    <section class="project-item">
+      <!-- image of project -->
+      <img src="/media/images/squid-swap.png" alt="place holder image" />
+      <!-- project title and description -->
+      <h3>Squid Swap</h3>
+      <p>
+        This was a bit of nonsense put together to test out Bootstrap.
+        <br />
+        The idea is from
+        <quote>John Finnemores Souvenir Program (BBC Radio 4)</quote> and is not
+        meant to be taken seriously ... at all!
+      </p>
+      <!-- link to project -->
+      <a
+        class="btn"
+        href="https://naflannery.github.io/SquidSwap/"
+        target="_blank"
+        >View project</a
+      >
+    </section>
+    <!-- End of Project block. -->
+  </div>
+</section>
+<%- include("footer.ejs"); %>

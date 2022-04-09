@@ -1,0 +1,205 @@
+/*
+-----------------------------------------------------
+Project color scheme
+-----------------------------------------------------
+
+CSS HEX
+--mint-cream: #f7fff7ff;
+--jet: #343434ff;
+--space-cadet: #2f3061ff;
+--naples-yellow: #ffe66dff;
+--pale-cerulean: #a1c6d7ff;
+
+CSS HSL
+--mint-cream: hsla(120, 100%, 98%, 1);
+--jet: hsla(0, 0%, 20%, 1);
+--space-cadet: hsla(239, 35%, 28%, 1);
+--naples-yellow: hsla(50, 100%, 71%, 1);
+--pale-cerulean: hsla(199, 40%, 74%, 1);
+
+*/
+
+/*Global Styles
+--------------------------------*/
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  line-height: 1.15; /*1*/
+}
+body {
+  background: hsla(120, 100%, 98%, 1);
+  color: hsla(0, 0%, 20%, 1);
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Caveat", cursive;
+}
+
+img {
+  width: 300px;
+}
+a {
+  color: hsla(50, 100%, 71%, 1);
+}
+a:hover {
+  text-decoration: none;
+}
+.content-wrapper {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+.divider > section {
+  border-bottom: 1px dashed hsla(0, 0%, 20%, 1);
+  padding: 25px 0;
+}
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+
+.navbar-brand {
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+}
+
+/*Profile
+--------------------------------*/
+#title-img {
+  width: 200px;
+  border-radius: 50%;
+}
+#header {
+  background: hsla(239, 35%, 28%, 1);
+  color: hsla(120, 100%, 98%, 1);
+}
+#header h1,
+#header h2,
+#header p {
+  color: hsla(120, 100%, 98%, 1);
+}
+
+/*Projects
+--------------------------------*/
+.projects {
+  background: hsla(120, 100%, 98%, 1);
+}
+.projects a {
+  color: hsla(239, 35%, 28%, 1);
+}
+.projects .btn {
+  color: hsla(120, 100%, 98%, 1);
+  background: hsla(239, 35%, 28%, 1);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+.projects .btn:hover {
+  background: hsla(239, 35%, 28%, 0.8);
+}
+.project-item {
+  overflow: hidden;
+  padding: 25px 0;
+}
+
+.project-item h3 {
+  margin-top: 0;
+}
+
+/*Work Experience
+--------------------------------*/
+.work-experience {
+  background: hsla(199, 40%, 74%, 1);
+}
+
+/*Education
+--------------------------------*/
+#education {
+  background-image: url("/media/images/sharon-mccutcheon-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+#education p {
+  width: 60%;
+}
+.education section {
+  padding: 15px 0;
+}
+
+/*Contact
+--------------------------------*/
+#footer {
+  background: hsla(0, 0%, 20%, 1);
+  color: hsla(120, 100%, 98%, 1);
+}
+#footer h2,
+#footer li,
+#footer a,
+#footer p {
+  color: hsla(120, 100%, 98%, 1);
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  display: block;
+}
+.contact-list li {
+  padding: 15px;
+  display: block;
+}
+#email a {
+  color: hsla(120, 100%, 98%, 1);
+  background: hsla(209, 85%, 50%, 1);
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 5px;
+  display: inline-block;
+}
+#email a:hover {
+  background: hsla(209, 85%, 40%, 0.8);
+}
+#facebook {
+  display: none;
+}
+
+/*Responsive layout
+------------------------------*/
+@media Screen and (min-width: 750px) {
+  /*applies to screens larger than 750px*/
+  /*float image left to create the look of columns in th project area*/
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+
+  header,
+  footer {
+    text-align: center;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .contact-list li {
+    display: inline-block;
+  }
+}
